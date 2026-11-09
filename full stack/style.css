@@ -1,0 +1,295 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #edf2f9;
+    color: #192338;
+}
+
+/* Header */
+.header {
+    background: white;
+    height: 150px;
+    padding: 25px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.logo h1 {
+    font-size: 48px;
+    color: #0862df;
+    letter-spacing: -3px;
+}
+
+.logo p {
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: #34445b;
+}
+
+.refresh,
+.menu-btn {
+    border: none;
+    background: #eff6ff;
+    color: #1260ce;
+    font-size: 30px;
+    padding: 12px 18px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.refresh {
+    border-radius: 50%;
+}
+
+/* Navigation */
+.menu {
+    display: none;
+    background: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.menu.active {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #1260ce;
+}
+
+/* Main Container */
+.container {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 25px 15px;
+}
+
+/* Assignment Card */
+.assignment-card {
+    background: white;
+    padding: 30px 42px;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* Top Information */
+.top-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.number {
+    background: #edf6ff;
+    color: #1260ce;
+    padding: 20px 28px;
+    font-size: 32px;
+    font-weight: bold;
+    border-radius: 18px;
+}
+
+.status {
+    background: #edf6ff;
+    color: #174b99;
+    padding: 14px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+/* Date */
+.date-info {
+    margin: 30px 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.date-info p {
+    color: #64748b;
+    font-size: 18px;
+}
+
+.date-info strong {
+    color: #334155;
+}
+
+.days {
+    background: #c4f8e5;
+    color: #08785a;
+    padding: 12px 18px;
+    border-radius: 25px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+hr {
+    border: none;
+    border-top: 1px dashed #ddd;
+    margin-bottom: 32px;
+}
+
+/* Heading */
+h2 {
+    font-size: 29px;
+    line-height: 1.5;
+    margin-bottom: 18px;
+}
+
+/* Description */
+.description {
+    font-size: 20px;
+    line-height: 1.9;
+    color: #293548;
+    margin-bottom: 25px;
+}
+
+/* Tutorial */
+.tutorial-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #dc2626;
+    background: #fff1f2;
+    border: 1px solid #fecaca;
+    padding: 17px 25px;
+    border-radius: 14px;
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+/* Features */
+.features h3 {
+    color: #2874d7;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.features ul {
+    padding-left: 33px;
+}
+
+.features li {
+    color: #526174;
+    font-size: 19px;
+    line-height: 1.8;
+    margin-bottom: 7px;
+}
+
+/* Outcome */
+.outcome {
+    margin-top: 25px;
+}
+
+.outcome h3 {
+    color: #08aa83;
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.outcome p {
+    color: #526174;
+    font-size: 19px;
+    line-height: 1.9;
+}
+
+/* Submit */
+.submit-area {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.submit-btn {
+    background: #0864e8;
+    color: white;
+    border: none;
+    padding: 18px 30px;
+    font-size: 21px;
+    font-weight: bold;
+    border-radius: 14px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background: #004dbb;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px 10px;
+    font-size: 14px;
+    color: #111827;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+
+    .header {
+        height: 125px;
+        padding: 15px;
+    }
+
+    .logo h1 {
+        font-size: 35px;
+    }
+
+    .logo p {
+        font-size: 8px;
+    }
+
+    .refresh,
+    .menu-btn {
+        font-size: 23px;
+        padding: 10px 13px;
+    }
+
+    .container {
+        padding: 15px 10px;
+    }
+
+    .assignment-card {
+        padding: 25px 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .description {
+        font-size: 17px;
+    }
+
+    .date-info {
+        flex-wrap: wrap;
+    }
+
+    .date-info p {
+        font-size: 15px;
+    }
+
+    .days {
+        font-size: 14px;
+    }
+
+    .features li,
+    .outcome p {
+        font-size: 17px;
+    }
+
+    .menu.active {
+        flex-direction: column;
+        gap: 15px;
+    }
+}

@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiranex - Assignment 5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <h1>Thiranex</h1>
+            <p>SKILL DEVELOPMENT & FUTURE TECH</p>
+        </div>
+
+        <button class="refresh" onclick="refreshPage()">⟳</button>
+
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    </header>
+
+    <nav id="menu" class="menu">
+        <a href="#">Home</a>
+        <a href="#">Assignments</a>
+        <a href="#">Profile</a>
+        <a href="#">Logout</a>
+    </nav>
+
+    <!-- Assignment Card -->
+    <main class="container">
+
+        <section class="assignment-card">
+
+            <div class="top-info">
+                <span class="number">5</span>
+                <span class="status">AVAILABLE</span>
+            </div>
+
+            <div class="date-info">
+                <p>▢ Due Date: <strong>03 Dec 2026</strong></p>
+                <span class="days">25 Days Left</span>
+            </div>
+
+            <hr>
+
+            <h2>
+                Full-Stack Deployment & Project Architecture
+            </h2>
+
+            <p class="description">
+                Combine all prior knowledge to build, optimize,
+                and deploy a comprehensive Web Development
+                Capstone Project (e.g., an E-commerce product catalog).
+            </p>
+
+            <!-- Tutorial Button -->
+            <a href="https://www.youtube.com/" target="_blank"
+               class="tutorial-btn">
+                ▶ Watch Task Tutorial
+            </a>
+
+            <!-- Key Features -->
+            <div class="features">
+                <h3>Key Features:</h3>
+
+                <ul>
+                    <li>Architect a modular frontend application</li>
+
+                    <li>
+                        Implement client-side routing for seamless navigation
+                    </li>
+
+                    <li>
+                        Optimize assets (images, minified code)
+                        for maximum performance
+                    </li>
+
+                    <li>
+                        Deploy the application live to a modern
+                        platform (Vercel, Netlify, or Render)
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Expected Outcome -->
+            <div class="outcome">
+                <h3>Expected Outcome:</h3>
+
+                <p>
+                    A live, production-ready web application
+                    with a public URL that demonstrates
+                    professional-grade web development capabilities.
+                </p>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="submit-area">
+                <button onclick="submitWork()" class="submit-btn">
+                    Submit Work
+                </button>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        System developed and maintained by Team Emogi
+        (emogi.in)
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
